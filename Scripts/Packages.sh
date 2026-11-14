@@ -62,6 +62,16 @@ UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
 UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
 
+
+#git clone --depth=1 --single-branch --branch v26.10.10 "https://github.com/XTLS/Xray-core.git" ./package/feeds/packages/xray-core
+UPDATE_PACKAGE "xray-core"         "kenzok8/small-package"  "main" "pkg"
+
+UPDATE_PACKAGE "luci-theme-vantage"      "anothaDev/luci-theme-vantage"   "main"
+
+
+UPDATE_PACKAGE "sing-box"   "VIKINGYFY/packages"  "main" "pkg"
+UPDATE_PACKAGE "luci-app-homeproxy"   "VIKINGYFY/packages"  "main" "pkg"
+
 UPDATE_PACKAGE "diskmanager" "4IceG/luci-app-mini-diskmanager" "main"
 UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
@@ -93,18 +103,6 @@ UPDATE_PACKAGE "netmonitor" "LianXia233/luci-app-netmonitor" "main"
 UPDATE_PACKAGE "qmodem-generic" "LianXia233/luci-app-qmodem-generic" "main"
 
 
-UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
-UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
-
-
-#git clone --depth=1 --single-branch --branch v26.10.10 "https://github.com/XTLS/Xray-core.git" ./package/feeds/packages/xray-core
-UPDATE_PACKAGE "xray-core"         "kenzok8/small-package"  "main" "pkg"
-
-UPDATE_PACKAGE "luci-theme-vantage"      "anothaDev/luci-theme-vantage"   "main"
-
-
-UPDATE_PACKAGE "sing-box"   "VIKINGYFY/packages"  "main" "pkg"
-UPDATE_PACKAGE "luci-app-homeproxy"   "VIKINGYFY/packages"  "main" "pkg"
 
 
 #更新软件包版本
