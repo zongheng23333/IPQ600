@@ -92,6 +92,21 @@ UPDATE_PACKAGE "mt5700m" "LianXia233/luci-app-mt5700m" "main"
 UPDATE_PACKAGE "netmonitor" "LianXia233/luci-app-netmonitor" "main"
 UPDATE_PACKAGE "qmodem-generic" "LianXia233/luci-app-qmodem-generic" "main"
 
+
+UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
+UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
+
+
+#git clone --depth=1 --single-branch --branch v26.10.10 "https://github.com/XTLS/Xray-core.git" ./package/feeds/packages/xray-core
+UPDATE_PACKAGE "xray-core"         "kenzok8/small-package"  "main" "pkg"
+
+UPDATE_PACKAGE "luci-theme-vantage"      "anothaDev/luci-theme-vantage"   "main"
+
+
+UPDATE_PACKAGE "sing-box"   "VIKINGYFY/packages"  "main" "pkg"
+UPDATE_PACKAGE "luci-app-homeproxy"   "VIKINGYFY/packages"  "main" "pkg"
+
+
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
